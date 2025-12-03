@@ -73,3 +73,20 @@ update  accounts
 update  accounts
     -> set customer_id = 5
     -> where account_id = 5;
+
+
+update  accounts
+    -> set advisor = 1
+    -> where account_id = 1;
+update  accounts
+    -> set advisor = 2
+    -> where account_id = 2;
+update  accounts
+    -> set advisor = 3
+    -> where account_id = 3;
+update  accounts
+    -> set advisor = 4
+    -> where account_id = 4;
+update  accounts
+    -> set advisor = 5
+    -> where account_id = 5;
