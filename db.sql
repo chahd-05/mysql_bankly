@@ -50,3 +50,10 @@ insert into accounts (account_number, balance, account_type)
     -> values (1004, 20000,"business"),
     -> values (1005, 80000,"business"),
     -> values (1006, 100000,"business");
+
+    
+insert into transactions (transaction_type)
+    -> value ("credit");
+
+insert into transactions (transaction_type)
+    -> value ("debit");
