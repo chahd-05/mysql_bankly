@@ -15,4 +15,16 @@ use bankly;
     -> email varchar(100)
     -> );
 
+    create table accounts (
+    -> account_id int primary key auto_increment,
+    -> account_number int,
+    -> balance int,
+    -> account_type (checking, savings, business) varchar (100),
+    -> customer_id int,
+    -> foreign key (customer_id) references customers (customer_id),
+    -> advisor_id int,
+    -> foreign key (advisor_id) references advisors (advisor_id)
+    -> );
+
+
 
