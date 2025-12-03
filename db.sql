@@ -44,3 +44,9 @@ insert into customers (full_name, email, phone)
               ("dar_hamza", "dar.hamza@gmail.com", 0523114098);
 
 
+insert into accounts (account_number, balance, account_type)
+    -> values (1002, 50000,"business"),
+    -> values (1003, 40000,"business"),
+    -> values (1004, 20000,"business"),
+    -> values (1005, 80000,"business"),
+    -> values (1006, 100000,"business");
