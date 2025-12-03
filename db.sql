@@ -36,4 +36,12 @@ use bankly;
     -> );
 
 
+insert into customers (full_name, email, phone)
+    -> values ("chahd_mazouz", "mazouzchahd12@gmail.com", 0707231103),
+              ("khalid_boutuil", "khalid.boutuil@gmail.com", 0654789213),
+              ("redouane_ibnbrahim", "red_bnbrahim@gmail.com", 0542136975),
+              ("bilal_zarrik", "bilal.zar@gmail.com", 0706563921),
+              ("dar_hamza", "dar.hamza@gmail.com", 0523114098);
+
+
 
