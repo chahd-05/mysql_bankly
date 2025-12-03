@@ -44,4 +44,3 @@ insert into customers (full_name, email, phone)
               ("dar_hamza", "dar.hamza@gmail.com", 0523114098);
 
 
-
