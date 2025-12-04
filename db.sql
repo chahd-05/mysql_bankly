@@ -45,7 +45,39 @@ insert into customers (full_name, email, phone)
 
 
 
+insert into advisor (full_name, email)
+    -> values ("ahmed", "ahmed@gmail.com"),
+              ("sarra", "sarra@gmail.com"),
+              ("meryem", "meryem@gmail.com"),
+              ("amine", "amine@gmail.com"),
+              ("mohammed", "mohammed@gmail.com");
 
+INSERT into transactions (amount)
+   -> values (500), (100), (800), (1000), (300);
+
+insert into transactions (transaction_type)
+    -> value ("credit"),  ("credit"),  ("credit");
+
+insert into transactions (transaction_type)
+    -> value ("debit"),  ("debit");
+
+   update transactions
+    -> set account_id = 1
+    -> where transaction_id = 1;
+    
+update  transactions
+    -> set account_id = 2
+    -> where transaction_id = 2;
+update  transactions
+    -> set account_id = 3
+    -> where transaction_id = 3;
+update  transactions
+    -> set account_id = 4
+    -> where transaction_id = 4;
+update  transactions
+    -> set account_id = 5
+    -> where transaction_id = 5;
+    
 
 update  accounts
     -> set customer_id = 1
@@ -75,7 +107,8 @@ update  accounts
     -> where account_id = 3;
 update  accounts
     -> set advisor = 4
-    -> where account_id = 4;
+    -> where account_id = 4;<
 update  accounts
     -> set advisor = 5
     -> where account_id = 5;
+
