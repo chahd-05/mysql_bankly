@@ -85,3 +85,19 @@ select *
 select *
 -> from accounts
 -> ordre by balance asc;
+
+--19.Afficher les transactions triées par amount (ordre décroissant) :
+select *
+-> from accounts
+-> order by balance desc;
+
+--20.Afficher les 5 plus grandes transactions :
+select *
+-> from transactions
+-> order by  transaction_id desc
+-> limit 5;
+
+--21.Afficher toutes les transactions triées par transaction_date décroissante :
+select *
+-> from transactions
+-> order by transaction_date desc;
