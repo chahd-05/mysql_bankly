@@ -130,3 +130,8 @@ select customer_id, sum(balance) as total_balance
 --3.
 ALTER table accounts
 -> add created at datetime default CURRENT_TIMESTAMP;
+
+--4.
+select account_id, sum ("debit") as total_debit, sum ("credit") as total_credit
+-> from transactions
+-> group by account_id;
