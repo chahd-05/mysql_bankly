@@ -77,7 +77,15 @@ update  transactions
 update  transactions
     -> set account_id = 5
     -> where transaction_id = 5;
-    
+
+
+
+  insert into accounts (account_number, balance, account_type)
+    -> values (1002, 50000,"business"),
+    -> values (1003, 40000,"business"),
+    -> values (1004, 20000,"business"),
+    -> values (1005, 80000,"business"),
+    -> values (1006, 100000,"business");
 
 update  accounts
     -> set customer_id = 1
