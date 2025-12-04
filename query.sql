@@ -70,3 +70,18 @@ select *
 select *
 -> from transactions
 -> where amount >= 500;
+
+--16.Afficher les transactions avec un amount entre 100 et 1000 :
+select *
+-> from transactions 
+-> where amount between 100 and 1000;
+
+--17.Afficher les accounts du customer_id = 1 ;
+select *
+-> from accounts 
+-> where customer_id = 1;
+
+--18.Afficher les accounts triés par balance (ordre croissant) :
+select *
+-> from accounts
+-> ordre by balance asc;
