@@ -54,3 +54,19 @@ select *
 select *
 -> from transactions
 -> where transaction_id = 1;
+
+--13.Afficher les customers ayant un account géré par l’advisor_id = 2 :
+select customers.* ,accounts.advisor_id
+-> from customers
+-> join accounts on customers.customer4 = accounts.customer_id
+-> where advisor_id = 2;
+
+--14.Afficher les accounts ayant account_type = "Savings" :
+select *
+-> from accounts
+-> where account_type = "saving";
+
+--15.Afficher les transactions avec un amount ≥ 500 :
+select *
+-> from transactions
+-> where amount >= 500;
