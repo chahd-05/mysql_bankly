@@ -101,3 +101,15 @@ select *
 select *
 -> from transactions
 -> order by transaction_date desc;
+
+--22.Afficher les 3 dernières transactions :
+select *
+-> from transactions
+-> order by transaction_id asc
+-> limit 3;
+
+--23.Afficher chaque account avec le nom du customer et le nom de l’advisor (JOIN) :
+select accounts.account_id, customers.full_name, advisors.full_name
+-> from accounts
+-> join customers on accounts.customer_id = customers.customer_id
+-> join advisors on accounts.advisor_id = advisors.advisor_id;
