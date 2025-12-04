@@ -39,3 +39,18 @@ select *
 select *
 -> from accounts
 -> where balance <= 0;
+
+--10.Afficher les transactions de type "debit" :
+select *
+-> from transactions
+-> where account_type = "debit";
+
+--11.Afficher les transactions de type "credit" :
+select *
+-> from transactions
+-> where transaction_type = "credit";
+
+--12.Afficher les transactions du account_id = 1 :
+select *
+-> from transactions
+-> where transaction_id = 1;
