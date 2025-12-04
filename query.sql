@@ -121,3 +121,8 @@ select accounts.account_id, customers.full_name, advisors.full_name
 select account_id, count(*) as total_transaction
 -> from transactions
 -> group by account_id;
+
+--2.
+select customer_id, sum(balance) as total_balance
+-> from accounts
+-> group by customer_id;
