@@ -113,3 +113,11 @@ select accounts.account_id, customers.full_name, advisors.full_name
 -> from accounts
 -> join customers on accounts.customer_id = customers.customer_id
 -> join advisors on accounts.advisor_id = advisors.advisor_id;
+
+
+--==> Bonus :
+
+--1.
+select account_id, count(*) as total_transaction
+-> from transactions
+-> group by account_id;
