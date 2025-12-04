@@ -12,3 +12,16 @@ update customers
 --3.Afficher tous les customers :
 select *
 -> from customers;
+
+
+--4.Afficher tous les customers :
+select full_name, email
+-> from customers;
+
+--5.Afficher tous les accounts :
+select *
+-> from accounts;
+
+--6.Afficher uniquement les account_number :
+select account_number
+-> from accounts;
