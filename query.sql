@@ -25,3 +25,17 @@ select *
 --6.Afficher uniquement les account_number :
 select account_number
 -> from accounts;
+
+--7.Afficher toutes les transactions :
+select *
+-> from transactions;
+
+--8.Afficher les accounts avec un balance > 10000 :
+select *
+-> from accounts
+-> where balance > 10000;
+
+--9.Afficher les accounts avec un balance ≤ 0 :
+select *
+-> from accounts
+-> where balance <= 0;
