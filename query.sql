@@ -126,3 +126,7 @@ select account_id, count(*) as total_transaction
 select customer_id, sum(balance) as total_balance
 -> from accounts
 -> group by customer_id;
+
+--3.
+ALTER table accounts
+-> add created at datetime default CURRENT_TIMESTAMP;
